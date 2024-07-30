@@ -18,7 +18,6 @@ public class Util {
   private static final String URL = "jdbc:mysql://localhost:3306/sakila";
   private static SessionFactory sessionFactory;
 
-  // Method to get a JDBC connection
   public static Connection getConnection() {
     Connection connection = null;
     try {
@@ -29,7 +28,6 @@ public class Util {
     return connection;
   }
 
-  // Method to get a Hibernate SessionFactory
   public static SessionFactory getSessionFactory() {
     if (sessionFactory == null) {
       try {
